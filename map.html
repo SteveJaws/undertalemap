@@ -1,0 +1,121 @@
+<!-- screen res = 1280 x 800 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/map.css">
+</head>
+<body>
+    <div class="hamburger" onclick="hamburgerclick()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="hamburgermenu" id="hamburgermenu">
+        <div class="x2" id="x2" onclick="hamburgermenuweg()">+</div>
+        <div class="container">
+            <div class="item" onclick="popup('img1')">
+                <img src="./CSS/points/maincharacter.png" alt="plaatje">
+                <div class="bar"></div>
+            </div>
+            <div class="item" onclick="popup('img2')">
+                <img src="./CSS/points/toriel-removebg-preview.png" alt="plaatje">
+                <div class="bar"></div>
+            </div>
+            <div class="item" onclick="popup('img3')">
+                <img src="./CSS/points/papyrus.png" alt="plaatje">
+                <div class="bar"></div>
+            </div>
+            <div class="item" onclick="popup('img4')">
+                <img src="./CSS/points/shopkeeper.png" alt="plaatje" >
+                <div class="bar"></div>
+            </div>
+            <div class="item" onclick="popup('img5')">
+                <img src="./CSS/points/undynehead.png" alt="plaatje">
+                <div class="bar"></div>
+            </div>
+            <div class="item" onclick="popup('img6')">
+                <img src="./CSS/points/monsterkid.png" alt="plaatje">
+                <div class="bar"></div>
+            </div>
+            <div class="item" onclick="popup('img7')">
+                <img src="./CSS/points/alphys-removebg-preview.png" alt="plaatje">
+                <div class="bar"></div>
+            </div>
+            <div class="item" onclick="popup('img8')">
+                <img src="./CSS/points/metatton-removebg-preview.png" alt="plaatje">
+                <div class="bar"></div>
+            </div>
+            <div class="item" onclick="popup('img9')">
+                <img src="./CSS/points/asgore-removebg-preview.png" alt="plaatje">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popupscreen" id="popupscreen">
+        <div onclick="screenclose()" class="x" id="XX">+</div>
+        <img class="popupbackground" id="popupbackground" src="" alt="popupbackground">
+        <div class="flex">
+            <div class="info" id="popuptext">
+                jevaderjevaderjevaderjevaderjevaderjevaderjevaderjevader<br> jevaderjevaderjevaderjevaderjevaderjevaderjevaderjevader <br> jevaderjevaderjevaderjevaderjevaderjevaderjevaderjevader<br>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="blur" id="blur">
+        <div class="section1" onclick="appear('section1')">
+            <div id="section1dis" class="seciton1dis">
+                <div class="name1" id="name1">
+                    RUINS
+                </div>
+                <div class="s1beam1" id="s1beam"></div>  <div class="s1beam1img" id="s1beamimg" onclick="popup('img1')"></div>
+                <div class="s1beam2" id="s1beam2"></div> <div class="s1beam2img" id="s1beam2img" onclick="popup('img2')"></div>
+            </div>
+        </div>
+        <div class="section2" onclick="appear('section2')">
+            <div id="section2dis" class="section2dis">
+                <div class="name2" id="name2">
+                    SNOWDIN
+                </div>
+                <div class="s2beam1"> <div class="s2beam1img" id="s2b1img" onclick="popup('img3')"></div> </div>
+                <div class="s2beam2"> <div class="s2beam2img" id="s2b2img" onclick="popup('img4')"></div> </div>
+            </div>
+        </div>
+        <div class="section3" onclick="appear('section3')">
+            <div class="section3dis" id="section3dis">
+                <div class="name2" id="name2">
+                    WATERFALL
+                </div>
+                <div class="s3beam1"><div class="s3beam1img" id="s3b1img" onclick="popup('img5')"></div></div>
+                <div class="s3beam2"><div class="s3beam2img" id="s3b2img" onclick="popup('img6')"></div></div>
+            </div>
+        </div>
+        <div class="section4" onclick="appear('section4')">
+            <div class="section4dis" id="section4dis">
+                <div class="name3" id="name2">
+                    HOTLAND/CORE
+                </div>
+                <div class="s4beam1"><div class="s4beam1img" id="s4b1img" onclick="popup('img7')"></div></div>
+                <div class="s4beam2"><div class="s4beam2img" id="s4b2img" onclick="popup('img8')"></div></div>
+            </div>
+        </div>
+        <div class="section5" onclick="appear('section5')">
+            <div class="section5dis" id="section5dis">
+                <div class="name2" id="name2">
+                    NEW HOME
+                </div>
+                <div class="s5beam1"><div class="s5beam1img" id="s5b1img" onclick="popup('img9')"></div></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./JS/popup.js"></script>
+<script src="./JS/function.js"></script>
+<script src="./JS/map.js"></script>
+</html>

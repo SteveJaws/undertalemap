@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+html{
+    overflow-y:hidden ;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(./background/undertalehighresfinal.png);
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    
+}
+
+.x2{
+    cursor: pointer;
+    font-size: 300%;
+    position: absolute;
+    right: 0;
+    transform: rotate(45deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburgermenu{
+    opacity: 0;
+    display: block;
+    color: white;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 10%;
+    background-color: black;
+}
+
+.hamburgeranimation{
+    animation: hamburgerslidein 1s ease-in-out;
+}
+
+@keyframes hamburgerslidein{
+    0%{
+        right: -10%;
+    }
+    100%{
+        opacity: 1;
+        right: 0%;
+    }
+}
+
+.hamburgeranimationweg{
+    animation: hamburgeranimationweg 1s ease-in-out;
+}
+
+@keyframes hamburgeranimationweg{
+    0%{
+        right: 0%;
+    }
+    100%{
+        opacity: 0;
+        right: -10%;
+    }
+}
+
+.hamburger{
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    height: 9%;
+    width: 3%;
+}
+
+.line{
+    border-radius: 10px;
+    margin-top: 20%;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    transition: all 1s ease-in-out;
+}
+
+.hamburger:hover > .line{
+    margin-top: 29%;
+}
+
+.section1dis{
+    display: none;
+}
+
+.section1{
+    position: absolute;
+    width: 20vw;
+    height: 100vh;
+}
+
+.name1{
+    display: none;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    font-family: 'Silkscreen', cursive;
+    font-size: x-large;
+    animation: namepopup 1.5s ease-in-out forwards;
+}
+
+@keyframes namepopup{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.s1beam1{
+    display: none;
+    transform-origin: bottom;
+    border-radius: 40px;
+    background-color: rgba(116, 65, 118, 0.9);
+    width: 10px;
+    height: 0px;
+    position: absolute;
+    top: 20%;
+    left: calc(100% - 85%);
+    animation:showbeam 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.s1beam1img{
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    bottom: 47%;
+    left: 7%;
+    height: 10%;
+    width: 20%;
+    background-image: url(./points/maincharacter.png);
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+    animation: namepopup 1s ease-in-out forwards;
+}
+
+.s1beam2{
+    display: none;
+    transform-origin: bottom;
+    border-radius: 40px;
+    background-color: rgba(116, 65, 118, 0.9);
+    width: 10px;
+    height: 0px;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    animation:showbeam 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.s1beam2img{
+    cursor: pointer;
+    display: none;
+    width: 20%;
+    height: 10%;
+    background-image: url(./points/toriel-removebg-preview.png);
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 60%;
+    left: 82%;
+    transition: all 0.5s ease-in-out;
+    animation: namepopup 1s ease-in-out forwards;
+}
+
+@keyframes showbeam{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 200px;
+    }
+}
+
+.popupscreen{
+    display: none;
+    color: white;
+    border-radius: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    animation: popupanimation 1.5s ease-in-out;
+}
+
+@keyframes popupanimation{
+    0%{
+        top: 150%;
+    }
+    100%{
+        top: 50%;
+    }
+}
+
+.weg{
+    animation: weg 1.5s ease-in-out;
+}
+
+@keyframes weg{
+    0%{
+        top: 50%;
+    }
+    100%{
+        top: 150%;
+    }
+}
+
+.flex{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto{
+    margin-right: 10%;
+}
+
+.info{
+    margin-left: 10%;
+    font-size: xx-large;
+}
+
+.x{
+    cursor: pointer;
+    font-size: 300%;
+    position: absolute;
+    right: 1%;
+    transform: rotate(45deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.popupbackground{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -99999;
+    filter: blur(5px);
+}
+
+button{
+    z-index: 19999999999999999999;
+    position: absolute;
+}
+
+.section2dis{
+    display: none;
+}
+
+.section2{
+    position: absolute;
+    left: 20vw;
+    height: 100vh;
+    width: 19vw;
+}
+
+.name2{
+    font-size: x-large;
+    position: relative;
+    top: 5vh;
+    left: 30%;
+    color: white;
+    font-family: 'Silkscreen', cursive;
+    animation: namepopup 1.5s ease-in-out forwards;
+}
+
+.s2beam1{
+    border-radius: 40px;
+    position: relative;
+    top: 5vh;
+    left: 14%;
+    height: 200px;
+    width: 10px;
+    background-color: rgb(126, 142, 181, 0.9);
+    animation: showbeam 1s ease-in-out;
+}
+
+.s2beam2{
+    border-radius: 40px;
+    position: absolute;
+    top: 15vh;
+    left: 77%;
+    height: 200px;
+    width: 10px;
+    background-color: rgb(126, 142, 181, 0.9);
+    animation: showbeam 1s ease-in-out;
+}
+
+.s2beam1img{
+    opacity: 0;
+    position: absolute;
+    top: 105%;
+    left: -2.2vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 5vw;
+    height: 5vh;
+    background-image: url(./points/papyrus.png);
+    transition: all 0.5s ease-in-out;
+}
+
+.s2beam2img{
+    opacity: 0;
+    position: relative;
+    top: 105%;
+    left: -2.2vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 5vw;
+    height: 5vh;
+    background-image: url(./points/shopkeeper.png);
+    transition: all 0.5s ease-in-out;
+}
+
+.imgpopup{
+    animation: imgpopup 1s ease-in-out;
+}
+
+@keyframes imgpopup{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.section3{
+    position: absolute;
+    left: 39vw;
+    width: 23vw;
+    height: 100vh;
+}
+
+.section3dis{
+    display: none;
+}
+
+.s3beam1{
+    position: absolute;
+    top: 10%;
+    left: 24%;
+    border-radius: 40px;
+    width: 10px;
+    height: 200px;
+    background-color: rgba(49,76,157,255);
+    opacity: 0.9;
+    animation: showbeam 1s ease-in-out;
+}
+
+.s3beam2{
+    position: absolute;
+    top: 17%;
+    left: 70%;
+    border-radius: 40px;
+    width: 10px;
+    height: 200px;
+    background-color: rgba(105,224,250,255);
+    opacity: 0.9;
+    animation: showbeam 1s ease-in-out;
+}
+
+.s3beam1img{
+    opacity: 0;
+    width: 5vw;
+    height: 5vh;
+    background-image: url(./points/undynehead.png);
+    transition: all 0.5s ease-in-out;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 100%;
+    left: -2.1vw;
+}
+
+.s3beam2img{
+    opacity: 0;
+    background-image: url(./points/monsterkid.png);
+    width: 5vw;
+    height: 5vh;
+    transition: all 0.5s ease-in-out;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 100%;
+    left: -2.1vw;
+}
+
+.section4{
+    position: absolute;
+    left: 63%;
+    width: 20vw;
+    height: 100vh;
+}
+
+.section4dis{
+    display: none;
+}
+
+.s4beam1{
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    border-radius: 40px;
+    width: 10px;
+    height: 200px;
+    background-color: rgb(243, 134, 29,255);
+    opacity: 0.9;
+    animation: showbeam 1s ease-in-out;
+}
+
+.s4beam2{
+    position: absolute;
+    top: 2%;
+    left: 90%;
+    border-radius: 40px;
+    width: 10px;
+    height: 200px;
+    background-color: rgb(118, 158, 222,255);
+    opacity: 0.9;
+    animation: showbeam 1s ease-in-out;
+}
+
+.name3{
+    font-size: x-large;
+    position: relative;
+    top: 5vh;
+    color: white;
+    font-family: 'Silkscreen', cursive;
+    animation: namepopup 1.5s ease-in-out forwards;
+}
+
+.s4beam1img{
+    opacity: 0;
+    background-image: url(./points/alphys-removebg-preview.png);
+    width: 5vw;
+    height: 5vh;
+    transition: all 0.5s ease-in-out;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 100%;
+    left: -2.1vw;
+}
+
+.s4beam2img{
+    opacity: 0;
+    background-image: url(./points/metatton-removebg-preview.png);
+    width: 5vw;
+    height: 5vh;
+    transition: all 0.5s ease-in-out;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 100%;
+    left: -2.1vw;
+}
+
+.section5{
+    position: absolute;
+    left: 84%;
+    width: 12vw;
+    height: 100vh;
+}
+
+.section5dis{
+    display: none;
+}
+
+.s5beam1{
+    position: absolute;
+    top: 2%;
+    left: 15%;
+    border-radius: 40px;
+    width: 10px;
+    height: 150px;
+    background-color: rgb(142, 153, 163,255);
+    opacity: 0.9;
+    animation: showbeam2 1s ease-in-out;
+}
+
+.s5beam1img{
+    opacity: 0;
+    background-image: url(./points/asgore-removebg-preview.png);
+    width: 5vw;
+    height: 5vh;
+    transition: all 0.5s ease-in-out;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 100%;
+    left: -2.1vw;
+}
+
+@keyframes showbeam2{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 150px;
+    }
+
+}
+
+img{
+    width: 5vw;
+    height: 5.5vh;
+    transition: all 1s ease-in-out;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.item{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bar{
+    background-color: darkblue;
+    width: 0%;
+    height: 1px;
+}
+
+.barfill{
+    animation: barfill 1s ease-in-out;
+}
+
+@keyframes barfill{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
